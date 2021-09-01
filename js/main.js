@@ -3,7 +3,7 @@ const randonNumber = getRandomNumber(100);
 const numberEl = document.querySelector(".js_number");
 const buttonEl = document.querySelector(".js_btn");
 const clueEl = document.querySelector(".js_clue");
-const counterEl = document.querySelector(".js_clue");
+const counterEl = document.querySelector(".js_counter");
 /*generar número random*/
 function getRandomNumber(max) {
   return Math.ceil(Math.random() * max);
@@ -31,11 +31,12 @@ function checkNumber() {
 }
 
 /*contador*/
-/*let triesCounterValue = 0;
-function counterCheck (){
-    triesCounterValue += 1;
-    counterEl.value = `Número de intentos:  ${triesCounterValue}´;
-}*/
+let triesCounterValue = 0;
+function counterCheck() {
+  triesCounterValue += 1;
+
+  counterEl.value = "Número de intentos:" + triesCounterValue;
+}
 
 function handleClickgame() {
   checkNumber();
