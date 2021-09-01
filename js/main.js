@@ -33,8 +33,8 @@ function checkNumber() {
 /*contador*/
 /*let triesCounterValue = 0;
 function counterCheck (){
-    triesCounterValue = triesCounterValue + 1;
-    counterEl.value = `Número de intentos: + ${triesCounterValue}´;
+    triesCounterValue += 1;
+    counterEl.value = `Número de intentos:  ${triesCounterValue}´;
 }*/
 
 function handleClickgame() {
