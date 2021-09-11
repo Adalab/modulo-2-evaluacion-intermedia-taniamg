@@ -5,15 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
   </head>
   <body class="container">
     <main class="main_container">
       <h1 class="title">Adivina el número</h1>
       <form class="form_container" action="#" method="get">
-        <label class="form_title">Introduce aquí tu número:</label>
-        <input class="input_number js_number" type="text" value="" />
+        <label for="randonNumber" class="form_title"
+          >Introduce aquí tu número:</label
+        >
+        <input
+          id="randonNumber"
+          class="input_number js_number"
+          type="text"
+          placeholder="Elige un número"
+        />
         <input class="input_btn js_btn" type="button" value="Prueba" />
       </form>
     </main>

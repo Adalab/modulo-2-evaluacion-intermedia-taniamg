@@ -19,14 +19,16 @@ function tip(advise) {
 function checkNumber() {
   const numberValue = parseInt(numberEl.value);
 
-  if (numberValue === "") {
-    tip("El número debe estar entre 1 y 100");
+  if (numberValue === randonNumber) {
+    tip("Has ganado campeona!!");
+  } else if (numberValue < 1 || numberValue > 100) {
+    tip(" El número debe estar entre 1 y 100");
   } else if (numberValue < randonNumber) {
     tip(" Demasiado bajo");
   } else if (numberValue > randonNumber) {
     tip("Demasiado alto");
   } else {
-    tip("Has ganado campeona!!!");
+    tip("Inserta un caracter válido");
   }
 }
 
